@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		<div>
+			<h1 align="center"><strong>Cadastro</strong></h1> 
+			<p><strong>Preencha com seus dados</strong></p>
+			<br>
+		</div>
+
+		<form>
+
+			<fieldset>
+				<legend>Informações Pessoais</legend>
+				
+					<div>
+						<span>
+							<label for="nome"><strong>Nome</strong></label>
+							<input type="text" name="nome" id="nome" required>
+						
+							<label for="sobrenome"><strong>Sobrenome</strong></label>
+							<input type="text" name="sobrenome" id="sobrenome" required><br><br>
+						</span>
+					</div>
+
+					<label for="email"><strong>Email</strong></label>
+					<input type="email" name="email" id="email" required>
+
+					<label for="Confirmaçao-Email"><strong>Confirmação de Email</strong></label>
+					<input type="email" name="Confirmaçao-Email" id="Confirmaçao-Email" required>
+
+					<br><br>
+
+					<label for="senha"><strong>Senha:</strong></label>
+					<input type="password" name="senha" id="senha"><br><br>
+
+					<label for="nascimento"><strong>Data de nascimento</strong></label>
+					<input type="date" name="data" id="data" required><br><br>
+
+						<label><strong>Genero</strong></label>
+					<label>
+						<input type="radio" name="sexo" value="M"> Masculino
+					</label>
+					<label>
+						<input type="radio" name="sexo" value="F"> Feminino
+					</label>
+					<label>
+						<input type="radio" name="sexo" value="O"> Outro
+					<br><br>
+
+					<label><strong>Cor/Raça</strong></label>
+					<select name="cor-raça">
+						<option value="" disabled selected>Selecione uma opção</option>
+						<option value="B">Branco</option>
+						<option value="N">Negro</option>
+						<option value="P">Pardo</option>
+						<option value="I">Indígena</option>
+						<option value="A">Asiático</option>
+					</select>
+					<br><br>
+
+					<label for="phonenum"><strong>Numero para contato</strong></label>
+					<input type="tel" id="phonenum"required>
+					<br><br>
+
+					<label for="Estado Civil"><strong>Estado Civil</strong></label>
+					<select id="Estado Civil">
+						<option selected disabled value="">---Selecione---</option>
+						<option>Casado</option>
+						<option>Solteiro</option>
+						<option>União estavel</option>
+						<option>Viúvo</option>
+						<option>Divorciado</option>
+					</select>
+					<br><br>
+
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend>Localização</legend>
+				<br>
+
+					<label for="Estado"><strong>Estado</strong></label>
+					<select id="Estado">
+						<option selected disabled value="">---Selecione---</option>
+						<option>AC</option>
+						<option>AL</option>
+						<option>AP</option>
+						<option>AM</option>
+						<option>BA</option>
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						<option>MT</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option>PR</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>RJ</option>
+						<option>RN</option>
+						<option>RS</option>
+						<option>RO</option>
+						<option>RR</option>
+						<option>SC</option>
+						<option>SP</option>
+						<option>SE</option>
+						<option>TO</option>
+					</select>
+				
+
+				<br><br>
+
+				<DIV>
+					<span>
+						<label for="CEP"><strong>CEP:</strong></label>
+						<input type="number" name="CEP">
+						<label for="Endereço"><strong>Endereço</strong></label>
+						<input type="text" name="Endereço">
+						<label for="numeroC"><strong>Numero</strong></label>
+						<input type="number" name="numeroC">
+					</span>
+				</DIV>
+
+				<br>
+
+				<div>
+					<span>
+						<label for="Bairro"><strong>Bairro</strong></label>
+						<input type="text" name="Bairro">
+						<label for="municipio"><strong>Municipio</strong></label>
+						<input type="text" name="Municipio">
+					</span>
+	
+				</div>
+					<br>
+			</fieldset>
+
+
+			<br>
+
+			<fieldset>
+				<legend>Preferências/Interesses</legend>
+				<br>
+				<label for="color"><strong>Cor favorita</strong></label>
+				<input type="color" id="color">
+				<BR><br>
+				<label><strong>Selecione seus gostos</strong></label>
+
+				<br><br>
+
+					<input type="checkbox" id="interesses1" value="Esportes">
+					<label for="interesses1">Esportes</label>
+					<input type="checkbox" id="interesses2" value="Tecnologia">
+					<label for="interesses2">Tecnologia</label>
+					<input type="checkbox" id="interesses3" value="Cinema">
+					<label for="interesses3">Cinema</label>
+					<input type="checkbox" id="interesses4" value="Musica">
+					<label for="interesses4">Musica</label>
+					<input type="checkbox" id="interesses5" value="Arte marciais">
+					<label for="interesses5">Arte marciais</label>
+					<input type="checkbox" id="interesses6" value="Outros">
+					<label for="interesses6">Outros</label>
+
+					<br><br>
+					
+					<label><strong>Área de Interesse</strong></label>
+					<br><br>
+					<label>
+						<input type="radio" name="area" value="T"> Tecnologia
+					</label>
+					<label>
+						<input type="radio" name="area" value="S"> Saúde
+					</label>
+					<label>
+						<input type="radio" name="area" value="C"> Cultura
+					</label>
+					<label>
+						<input type="radio" name="area" value="E"> Educação
+					</label>
+					<label>
+						<input type="radio" name="area" value="O"> Outros
+					</label>
+
+					<br><br>
+
+					<label><strong>O que gosta de fazer no tempo livre:</strong><br>
+						<textarea row="6" style="width: 26em" nome="hobbies"></textarea><br><br>
+					</label>
+
+			</fieldset>
+
+			<Br> <br>
+
+			<fieldset>
+				<legend>Informações Profissionais e Educacionais</legend>
+				<br>
+				
+				<label for="Escolaridade"><strong>Escolaridade</strong></label>
+				<select id="Escolaridade">
+					<option selected disabled value="">---Selecione---</option>
+					<option>Ensino Fundamental Completo</option>
+					<option>Ensino Fundamental Incompleto</option>
+					<option>Ensino Médio Completo</option>
+					<option>Ensino Médio Incompleto</option>
+					<option>Ensino Superior Completo</option>
+					<option>Ensino Superior Incompleto</option>
+				</select>
+
+				<br><br>
+
+				
+				<label for="Profissão"><strong>Profissão</strong></label>	
+				<input type="text" name="Profissão" id="Profissão" required> 
+
+				<br>
+
+			  </fieldset>
+
+			  <br><br>
+
+			<fieldset>
+				<legend>Informe suas redes sociais</legend>
+				<div>
+				<br>
+				  <label for="Facebook">Facebook:</label>
+				  <input type="url" id="Facebook" name="Facebook"><br><br>
+				  <label for="Instagram">Instagram:</label>
+				  <input type="url" id="Instagram" name="Instagram"><br><br>
+				  <label for="Twitter">Twitter:</label>
+				  <input type="url" id="Twitter" name="Twitter"><br><br>
+				</div>
+			  </fieldset>
+			  <br><br>
+			<button align="center" type="submit"><strong>Concluir cadastro</strong></button>
+
+		</form>
+
+	</body>
+	
+</html>
