@@ -1,252 +1,238 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Formulario</title>
-		<meta charset="utf-8">
-	</head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
 
-	<body>
+    <header>
+        <h1 style="text-align: center;"><strong>Cadastro</strong></h1>
+        <p style="text-align: center;">Preencha com seus dados</p>
+    </header>
 
-		<div>
-			<h1 align="center"><strong>Cadastro</strong></h1> 
-			<p><strong>Preencha com seus dados</strong></p>
-			<br>
-		</div>
+    <main>
+        <form>
+            <!-- Informações Pessoais -->
+            <fieldset>
+                <legend>Informações Pessoais</legend>
 
-		<form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
 
-			<fieldset>
-				<legend>Informações Pessoais</legend>
-				
-					<div>
-						<span>
-							<label for="nome"><strong>Nome</strong></label>
-							<input type="text" name="nome" id="nome" required>
-						
-							<label for="sobrenome"><strong>Sobrenome</strong></label>
-							<input type="text" name="sobrenome" id="sobrenome" required><br><br>
-						</span>
-					</div>
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
 
-					<label for="email"><strong>Email</strong></label>
-					<input type="email" name="email" id="email" required>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-					<label for="Confirmaçao-Email"><strong>Confirmação de Email</strong></label>
-					<input type="email" name="Confirmaçao-Email" id="Confirmaçao-Email" required>
+                <div>
+                    <label for="confirmacao-email">Confirmação de Email:</label>
+                    <input type="email" name="confirmacao-email" id="confirmacao-email" required>
+                </div>
 
-					<br><br>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
 
-					<label for="senha"><strong>Senha:</strong></label>
-					<input type="password" name="senha" id="senha"><br><br>
+                <div>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
 
-					<label for="nascimento"><strong>Data de nascimento</strong></label>
-					<input type="date" name="data" id="data" required><br><br>
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <label><input type="radio" name="genero" value="M"> Masculino</label>
+                    <label><input type="radio" name="genero" value="F"> Feminino</label>
+                    <label><input type="radio" name="genero" value="O"> Outro</label>
+                </fieldset>
 
-						<label><strong>Genero</strong></label>
-					<label>
-						<input type="radio" name="sexo" value="M"> Masculino
-					</label>
-					<label>
-						<input type="radio" name="sexo" value="F"> Feminino
-					</label>
-					<label>
-						<input type="radio" name="sexo" value="O"> Outro
-					<br><br>
+                <div>
+                    <label for="cor-raca">Cor/Raça:</label>
+                    <select name="cor-raca" id="cor-raca" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="B">Branco</option>
+                        <option value="N">Negro</option>
+                        <option value="P">Pardo</option>
+                        <option value="I">Indígena</option>
+                        <option value="A">Asiático</option>
+                    </select>
+                </div>
 
-					<label><strong>Cor/Raça</strong></label>
-					<select name="cor-raça">
-						<option value="" disabled selected>Selecione uma opção</option>
-						<option value="B">Branco</option>
-						<option value="N">Negro</option>
-						<option value="P">Pardo</option>
-						<option value="I">Indígena</option>
-						<option value="A">Asiático</option>
-					</select>
-					<br><br>
+                <div>
+                    <label for="telefone">Número para contato:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
 
-					<label for="phonenum"><strong>Numero para contato</strong></label>
-					<input type="tel" id="phonenum"required>
-					<br><br>
+                <div>
+                    <label for="estado-civil">Estado Civil:</label>
+                    <select id="estado-civil" name="estado-civil" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="uniao-estavel">União estável</option>
+                        <option value="viuvo">Viúvo</option>
+                        <option value="divorciado">Divorciado</option>
+                    </select>
+                </div>
 
-					<label for="Estado Civil"><strong>Estado Civil</strong></label>
-					<select id="Estado Civil">
-						<option selected disabled value="">---Selecione---</option>
-						<option>Casado</option>
-						<option>Solteiro</option>
-						<option>União estavel</option>
-						<option>Viúvo</option>
-						<option>Divorciado</option>
-					</select>
-					<br><br>
+            </fieldset>
 
-			</fieldset>
+            <!-- Localização -->
+            <fieldset>
+                <legend>Localização</legend>
 
-			<br>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
 
-			<fieldset>
-				<legend>Localização</legend>
-				<br>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
 
-					<label for="Estado"><strong>Estado</strong></label>
-					<select id="Estado">
-						<option selected disabled value="">---Selecione---</option>
-						<option>AC</option>
-						<option>AL</option>
-						<option>AP</option>
-						<option>AM</option>
-						<option>BA</option>
-						<option>CE</option>
-						<option>DF</option>
-						<option>ES</option>
-						<option>GO</option>
-						<option>MA</option>
-						<option>MT</option>
-						<option>MS</option>
-						<option>MG</option>
-						<option>PA</option>
-						<option>PB</option>
-						<option>PR</option>
-						<option>PE</option>
-						<option>PI</option>
-						<option>RJ</option>
-						<option>RN</option>
-						<option>RS</option>
-						<option>RO</option>
-						<option>RR</option>
-						<option>SC</option>
-						<option>SP</option>
-						<option>SE</option>
-						<option>TO</option>
-					</select>
-				
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
 
-				<br><br>
+                <div>
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero" id="numero" required>
+                </div>
 
-				<DIV>
-					<span>
-						<label for="CEP"><strong>CEP:</strong></label>
-						<input type="number" name="CEP">
-						<label for="Endereço"><strong>Endereço</strong></label>
-						<input type="text" name="Endereço">
-						<label for="numeroC"><strong>Numero</strong></label>
-						<input type="number" name="numeroC">
-					</span>
-				</DIV>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
 
-				<br>
+                <div>
+                    <label for="municipio">Município:</label>
+                    <input type="text" name="municipio" id="municipio" required>
+                </div>
 
-				<div>
-					<span>
-						<label for="Bairro"><strong>Bairro</strong></label>
-						<input type="text" name="Bairro">
-						<label for="municipio"><strong>Municipio</strong></label>
-						<input type="text" name="Municipio">
-					</span>
-	
-				</div>
-					<br>
-			</fieldset>
+            </fieldset>
 
+            <!-- Preferências e Interesses -->
+            <fieldset>
+                <legend>Preferências e Interesses</legend>
 
-			<br>
+                <div>
+                    <label for="cor-favorita">Cor favorita:</label>
+                    <input type="color" id="cor-favorita" name="cor-favorita">
+                </div>
 
-			<fieldset>
-				<legend>Preferências/Interesses</legend>
-				<br>
-				<label for="color"><strong>Cor favorita</strong></label>
-				<input type="color" id="color">
-				<BR><br>
-				<label><strong>Selecione seus gostos</strong></label>
+                <div>
+                    <p>Selecione seus gostos:</p>
+                    <label><input type="checkbox" name="gostos" value="esportes"> Esportes</label>
+                    <label><input type="checkbox" name="gostos" value="tecnologia"> Tecnologia</label>
+                    <label><input type="checkbox" name="gostos" value="cinema"> Cinema</label>
+                    <label><input type="checkbox" name="gostos" value="musica"> Música</label>
+                    <label><input type="checkbox" name="gostos" value="artes-marciais"> Artes Marciais</label>
+                    <label><input type="checkbox" name="gostos" value="outros"> Outros</label>
+                </div>
 
-				<br><br>
+                <div>
+                    <p>Área de Interesse:</p>
+                    <label><input type="radio" name="area" value="tecnologia"> Tecnologia</label>
+                    <label><input type="radio" name="area" value="saude"> Saúde</label>
+                    <label><input type="radio" name="area" value="cultura"> Cultura</label>
+                    <label><input type="radio" name="area" value="educacao"> Educação</label>
+                    <label><input type="radio" name="area" value="outros"> Outros</label>
+                </div>
 
-					<input type="checkbox" id="interesses1" value="Esportes">
-					<label for="interesses1">Esportes</label>
-					<input type="checkbox" id="interesses2" value="Tecnologia">
-					<label for="interesses2">Tecnologia</label>
-					<input type="checkbox" id="interesses3" value="Cinema">
-					<label for="interesses3">Cinema</label>
-					<input type="checkbox" id="interesses4" value="Musica">
-					<label for="interesses4">Musica</label>
-					<input type="checkbox" id="interesses5" value="Arte marciais">
-					<label for="interesses5">Arte marciais</label>
-					<input type="checkbox" id="interesses6" value="Outros">
-					<label for="interesses6">Outros</label>
+                <div>
+                    <label for="tempo-livre">O que gosta de fazer no tempo livre:</label>
+                    <textarea id="tempo-livre" name="tempo-livre" rows="4" cols="50"></textarea>
+                </div>
+            </fieldset>
 
-					<br><br>
-					
-					<label><strong>Área de Interesse</strong></label>
-					<br><br>
-					<label>
-						<input type="radio" name="area" value="T"> Tecnologia
-					</label>
-					<label>
-						<input type="radio" name="area" value="S"> Saúde
-					</label>
-					<label>
-						<input type="radio" name="area" value="C"> Cultura
-					</label>
-					<label>
-						<input type="radio" name="area" value="E"> Educação
-					</label>
-					<label>
-						<input type="radio" name="area" value="O"> Outros
-					</label>
+            <!-- Informações Profissionais e Educacionais -->
+            <fieldset>
+                <legend>Informações Profissionais e Educacionais</legend>
 
-					<br><br>
+                <div>
+                    <label for="escolaridade">Escolaridade:</label>
+                    <select id="escolaridade" name="escolaridade" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="fundamental-completo">Ensino Fundamental Completo</option>
+                        <option value="fundamental-incompleto">Ensino Fundamental Incompleto</option>
+                        <option value="medio-completo">Ensino Médio Completo</option>
+                        <option value="medio-incompleto">Ensino Médio Incompleto</option>
+                        <option value="superior-completo">Ensino Superior Completo</option>
+                        <option value="superior-incompleto">Ensino Superior Incompleto</option>
+                    </select>
+                </div>
 
-					<label><strong>O que gosta de fazer no tempo livre:</strong><br>
-						<textarea row="6" style="width: 26em" nome="hobbies"></textarea><br><br>
-					</label>
+                <div>
+                    <label for="profissao">Profissão:</label>
+                    <input type="text" name="profissao" id="profissao" required>
+                </div>
 
-			</fieldset>
+            </fieldset>
 
-			<Br> <br>
+            <!-- Redes Sociais -->
+            <fieldset>
+                <legend>Redes Sociais</legend>
 
-			<fieldset>
-				<legend>Informações Profissionais e Educacionais</legend>
-				<br>
-				
-				<label for="Escolaridade"><strong>Escolaridade</strong></label>
-				<select id="Escolaridade">
-					<option selected disabled value="">---Selecione---</option>
-					<option>Ensino Fundamental Completo</option>
-					<option>Ensino Fundamental Incompleto</option>
-					<option>Ensino Médio Completo</option>
-					<option>Ensino Médio Incompleto</option>
-					<option>Ensino Superior Completo</option>
-					<option>Ensino Superior Incompleto</option>
-				</select>
+                <div>
+                    <label for="facebook">Facebook:</label>
+                    <input type="url" id="facebook" name="facebook">
+                </div>
 
-				<br><br>
+                <div>
+                    <label for="instagram">Instagram:</label>
+                    <input type="url" id="instagram" name="instagram">
+                </div>
 
-				
-				<label for="Profissão"><strong>Profissão</strong></label>	
-				<input type="text" name="Profissão" id="Profissão" required> 
+                <div>
+                    <label for="twitter">Twitter:</label>
+                    <input type="url" id="twitter" name="twitter">
+                </div>
 
-				<br>
+            </fieldset>
 
-			  </fieldset>
+            <button type="submit">Concluir Cadastro</button>
+        </form>
+    </main>
 
-			  <br><br>
-
-			<fieldset>
-				<legend>Informe suas redes sociais</legend>
-				<div>
-				<br>
-				  <label for="Facebook">Facebook:</label>
-				  <input type="url" id="Facebook" name="Facebook"><br><br>
-				  <label for="Instagram">Instagram:</label>
-				  <input type="url" id="Instagram" name="Instagram"><br><br>
-				  <label for="Twitter">Twitter:</label>
-				  <input type="url" id="Twitter" name="Twitter"><br><br>
-				</div>
-			  </fieldset>
-			  <br><br>
-			<button align="center" type="submit"><strong>Concluir cadastro</strong></button>
-
-		</form>
-
-	</body>
-	
+</body>
 </html>
